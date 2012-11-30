@@ -1,0 +1,36 @@
+//
+// Prefix header for all source files of the 'IntegrateCenter' target in the 'IntegrateCenter' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import "JSONKit.h"
+#endif
+
+// define some macros
+#ifndef __has_feature
+#define __has_feature(x) 0
+#endif
+#ifndef __has_extension
+#define __has_extension __has_feature // Compatibility with pre-3.0 compilers.
+#endif
+
+#if __has_feature(objc_arc) && __clang_major__ >= 3
+#define ARC_ENABLED 1
+#endif // __has_feature(objc_arc)
+
+#if ARC_ENABLED
+#define SNS_RETAIN(xx) (xx)
+#define SNS_RELEASE(xx)  xx = nil
+#define SNS_AUTORELEASE(xx)  (xx)
+#else
+#define SNS_RETAIN(xx)           [xx retain]
+#define SNS_RELEASE(xx)          [xx release], xx = nil
+#define SNS_AUTORELEASE(xx)      [xx autorelease]
+#endif
+
+#ifdef DEBUG
+#define DLog(format, ...) NSLog((@"[LINE: %d]%s: " format), __LINE__, __PRETTY_FUNCTION__, ## __VA_ARGS__)
+#else
+#define DLog(format, ...)
+#endif

@@ -1,0 +1,675 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A2EEE1214D5234700CA9507 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A2EEE1114D5234700CA9507 /* Foundation.framework */; };
+		1A2EEE6914D5240900CA9507 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A2EEE6814D5240900CA9507 /* UIKit.framework */; };
+		6024FB281665BD530005DDE2 /* DoubanApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 6024FB261665BD530005DDE2 /* DoubanApi.h */; };
+		6024FB291665BD530005DDE2 /* DoubanApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 6024FB271665BD530005DDE2 /* DoubanApi.m */; };
+		6024FB2D1665BDB30005DDE2 /* DoubanAuthorize.h in Headers */ = {isa = PBXBuildFile; fileRef = 6024FB2B1665BDB30005DDE2 /* DoubanAuthorize.h */; };
+		6024FB2E1665BDB30005DDE2 /* DoubanAuthorize.m in Sources */ = {isa = PBXBuildFile; fileRef = 6024FB2C1665BDB30005DDE2 /* DoubanAuthorize.m */; };
+		6024FB311665BE220005DDE2 /* DoubanConnector.h in Headers */ = {isa = PBXBuildFile; fileRef = 6024FB2F1665BE220005DDE2 /* DoubanConnector.h */; };
+		6024FB321665BE220005DDE2 /* DoubanConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 6024FB301665BE220005DDE2 /* DoubanConnector.m */; };
+		604069431665A4FF00FBBD26 /* WeixinAuthorize.h in Headers */ = {isa = PBXBuildFile; fileRef = 604069411665A4FF00FBBD26 /* WeixinAuthorize.h */; };
+		604069441665A4FF00FBBD26 /* WeixinAuthorize.m in Sources */ = {isa = PBXBuildFile; fileRef = 604069421665A4FF00FBBD26 /* WeixinAuthorize.m */; };
+		6040694E1665B1EC00FBBD26 /* WeixinConnector.h in Headers */ = {isa = PBXBuildFile; fileRef = 6040694C1665B1EB00FBBD26 /* WeixinConnector.h */; };
+		6040694F1665B1EC00FBBD26 /* WeixinConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 6040694D1665B1EC00FBBD26 /* WeixinConnector.m */; };
+		604069521665B21B00FBBD26 /* WeixinApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 604069501665B21B00FBBD26 /* WeixinApi.h */; };
+		604069531665B21B00FBBD26 /* WeixinApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 604069511665B21B00FBBD26 /* WeixinApi.m */; };
+		604195A01647573A00AD63A7 /* SNSOAuth1Authorize.h in Headers */ = {isa = PBXBuildFile; fileRef = 6041959E1647573900AD63A7 /* SNSOAuth1Authorize.h */; };
+		604195A11647573A00AD63A7 /* SNSOAuth1Authorize.m in Sources */ = {isa = PBXBuildFile; fileRef = 6041959F1647573A00AD63A7 /* SNSOAuth1Authorize.m */; };
+		606A86911641026E007EA13D /* AccountInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 606A86591641026E007EA13D /* AccountInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		606A86921641026E007EA13D /* AccountInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 606A865A1641026E007EA13D /* AccountInfo.m */; };
+		606A86931641026E007EA13D /* ApiCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 606A865B1641026E007EA13D /* ApiCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		606A86941641026E007EA13D /* ApiCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 606A865C1641026E007EA13D /* ApiCore.m */; };
+		606A86951641026E007EA13D /* BaseApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 606A865D1641026E007EA13D /* BaseApi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		606A86961641026E007EA13D /* BaseApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 606A865E1641026E007EA13D /* BaseApi.m */; };
+		606A86971641026E007EA13D /* KaixinApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 606A865F1641026E007EA13D /* KaixinApi.h */; };
+		606A86981641026E007EA13D /* KaixinApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 606A86601641026E007EA13D /* KaixinApi.m */; };
+		606A86991641026E007EA13D /* RenrenApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 606A86611641026E007EA13D /* RenrenApi.h */; };
+		606A869A1641026E007EA13D /* RenrenApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 606A86621641026E007EA13D /* RenrenApi.m */; };
+		606A869B1641026E007EA13D /* SinaApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 606A86631641026E007EA13D /* SinaApi.h */; };
+		606A869C1641026E007EA13D /* SinaApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 606A86641641026E007EA13D /* SinaApi.m */; };
+		606A869D1641026E007EA13D /* TencentApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 606A86651641026E007EA13D /* TencentApi.h */; };
+		606A869E1641026E007EA13D /* TencentApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 606A86661641026E007EA13D /* TencentApi.m */; };
+		606A869F1641026E007EA13D /* TwitterApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 606A86671641026E007EA13D /* TwitterApi.h */; };
+		606A86A01641026E007EA13D /* TwitterApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 606A86681641026E007EA13D /* TwitterApi.m */; };
+		606A86A11641026E007EA13D /* KaixinAuthorize.h in Headers */ = {isa = PBXBuildFile; fileRef = 606A866A1641026E007EA13D /* KaixinAuthorize.h */; };
+		606A86A21641026E007EA13D /* KaixinAuthorize.m in Sources */ = {isa = PBXBuildFile; fileRef = 606A866B1641026E007EA13D /* KaixinAuthorize.m */; };
+		606A86A31641026E007EA13D /* KaixinConnector.h in Headers */ = {isa = PBXBuildFile; fileRef = 606A866C1641026E007EA13D /* KaixinConnector.h */; };
+		606A86A41641026E007EA13D /* KaixinConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 606A866D1641026E007EA13D /* KaixinConnector.m */; };
+		606A86A51641026E007EA13D /* RenrenAuthorize.h in Headers */ = {isa = PBXBuildFile; fileRef = 606A866E1641026E007EA13D /* RenrenAuthorize.h */; };
+		606A86A61641026E007EA13D /* RenrenAuthorize.m in Sources */ = {isa = PBXBuildFile; fileRef = 606A866F1641026E007EA13D /* RenrenAuthorize.m */; };
+		606A86A71641026E007EA13D /* RenrenConnector.h in Headers */ = {isa = PBXBuildFile; fileRef = 606A86701641026E007EA13D /* RenrenConnector.h */; };
+		606A86A81641026E007EA13D /* RenrenConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 606A86711641026E007EA13D /* RenrenConnector.m */; };
+		606A86A91641026E007EA13D /* SinaAuthorize.h in Headers */ = {isa = PBXBuildFile; fileRef = 606A86721641026E007EA13D /* SinaAuthorize.h */; };
+		606A86AA1641026E007EA13D /* SinaAuthorize.m in Sources */ = {isa = PBXBuildFile; fileRef = 606A86731641026E007EA13D /* SinaAuthorize.m */; };
+		606A86AB1641026E007EA13D /* SinaConnector.h in Headers */ = {isa = PBXBuildFile; fileRef = 606A86741641026E007EA13D /* SinaConnector.h */; };
+		606A86B51641026E007EA13D /* TencentAuthorize.h in Headers */ = {isa = PBXBuildFile; fileRef = 606A867E1641026E007EA13D /* TencentAuthorize.h */; };
+		606A86B61641026E007EA13D /* TencentAuthorize.m in Sources */ = {isa = PBXBuildFile; fileRef = 606A867F1641026E007EA13D /* TencentAuthorize.m */; };
+		606A86B71641026E007EA13D /* TencentConnector.h in Headers */ = {isa = PBXBuildFile; fileRef = 606A86801641026E007EA13D /* TencentConnector.h */; };
+		606A86B81641026E007EA13D /* TencentConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 606A86811641026E007EA13D /* TencentConnector.m */; };
+		606A86B91641026E007EA13D /* TwitterAuthorize.h in Headers */ = {isa = PBXBuildFile; fileRef = 606A86821641026E007EA13D /* TwitterAuthorize.h */; };
+		606A86BA1641026E007EA13D /* TwitterAuthorize.m in Sources */ = {isa = PBXBuildFile; fileRef = 606A86831641026E007EA13D /* TwitterAuthorize.m */; };
+		606A86BB1641026E007EA13D /* TwitterConnector.h in Headers */ = {isa = PBXBuildFile; fileRef = 606A86841641026E007EA13D /* TwitterConnector.h */; };
+		606A86BC1641026E007EA13D /* TwitterConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 606A86851641026E007EA13D /* TwitterConnector.m */; };
+		606A86BD1641026E007EA13D /* ConstantsDefinition.h in Headers */ = {isa = PBXBuildFile; fileRef = 606A86861641026E007EA13D /* ConstantsDefinition.h */; };
+		606A86BE1641026E007EA13D /* GTMBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = 606A86891641026E007EA13D /* GTMBase64.h */; };
+		606A86BF1641026E007EA13D /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 606A868A1641026E007EA13D /* GTMBase64.m */; };
+		606A86C01641026E007EA13D /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 606A868B1641026E007EA13D /* GTMDefines.h */; };
+		606A86C11641026E007EA13D /* CategoryUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 606A868C1641026E007EA13D /* CategoryUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		606A86C21641026E007EA13D /* CategoryUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 606A868D1641026E007EA13D /* CategoryUtil.m */; };
+		606A86C31641026E007EA13D /* JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 606A868F1641026E007EA13D /* JSONKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		606A86C41641026E007EA13D /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 606A86901641026E007EA13D /* JSONKit.m */; };
+		607007FA164394A000DC2023 /* SinaConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 607007F9164394A000DC2023 /* SinaConnector.m */; };
+		6070080D1643ABB500DC2023 /* SNSAuthorize.h in Headers */ = {isa = PBXBuildFile; fileRef = 607008031643ABB500DC2023 /* SNSAuthorize.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6070080E1643ABB500DC2023 /* SNSAuthorize.m in Sources */ = {isa = PBXBuildFile; fileRef = 607008041643ABB500DC2023 /* SNSAuthorize.m */; };
+		6070080F1643ABB500DC2023 /* SNSAuthorizeWebView.h in Headers */ = {isa = PBXBuildFile; fileRef = 607008051643ABB500DC2023 /* SNSAuthorizeWebView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		607008101643ABB500DC2023 /* SNSAuthorizeWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 607008061643ABB500DC2023 /* SNSAuthorizeWebView.m */; };
+		607008111643ABB500DC2023 /* SNSConnector.h in Headers */ = {isa = PBXBuildFile; fileRef = 607008071643ABB500DC2023 /* SNSConnector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		607008121643ABB500DC2023 /* SNSConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 607008081643ABB500DC2023 /* SNSConnector.m */; };
+		607008131643ABB500DC2023 /* SNSRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 607008091643ABB500DC2023 /* SNSRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		607008141643ABB500DC2023 /* SNSRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6070080A1643ABB500DC2023 /* SNSRequest.m */; };
+		607008151643ABB500DC2023 /* SNSSignatureRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 6070080B1643ABB500DC2023 /* SNSSignatureRequest.h */; };
+		607008161643ABB500DC2023 /* SNSSignatureRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6070080C1643ABB500DC2023 /* SNSSignatureRequest.m */; };
+		607008191643ABE700DC2023 /* SNSOAuth1Connector.h in Headers */ = {isa = PBXBuildFile; fileRef = 607008171643ABE700DC2023 /* SNSOAuth1Connector.h */; };
+		6070081A1643ABE700DC2023 /* SNSOAuth1Connector.m in Sources */ = {isa = PBXBuildFile; fileRef = 607008181643ABE700DC2023 /* SNSOAuth1Connector.m */; };
+		6070081D1643AC0000DC2023 /* SNSOAuth2Connector.h in Headers */ = {isa = PBXBuildFile; fileRef = 6070081B1643AC0000DC2023 /* SNSOAuth2Connector.h */; };
+		6070081E1643AC0000DC2023 /* SNSOAuth2Connector.m in Sources */ = {isa = PBXBuildFile; fileRef = 6070081C1643AC0000DC2023 /* SNSOAuth2Connector.m */; };
+		6077E97D1642441B00056C96 /* FacebookConnector.h in Headers */ = {isa = PBXBuildFile; fileRef = 6077E97B1642441B00056C96 /* FacebookConnector.h */; };
+		6077E97E1642441B00056C96 /* FacebookConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 6077E97C1642441B00056C96 /* FacebookConnector.m */; };
+		6077E982164244A000056C96 /* FacebookAuthorize.h in Headers */ = {isa = PBXBuildFile; fileRef = 6077E980164244A000056C96 /* FacebookAuthorize.h */; };
+		6077E983164244A000056C96 /* FacebookAuthorize.m in Sources */ = {isa = PBXBuildFile; fileRef = 6077E981164244A000056C96 /* FacebookAuthorize.m */; };
+		6077E9871642465B00056C96 /* FacebookApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 6077E9851642465B00056C96 /* FacebookApi.h */; };
+		6077E9881642465B00056C96 /* FacebookApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 6077E9861642465B00056C96 /* FacebookApi.m */; };
+		6077E9911642536600056C96 /* LinkedinApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 6077E98F1642536600056C96 /* LinkedinApi.h */; };
+		6077E9921642536600056C96 /* LinkedinApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 6077E9901642536600056C96 /* LinkedinApi.m */; };
+		6077E99A164258BE00056C96 /* LinkedinAuthorize.h in Headers */ = {isa = PBXBuildFile; fileRef = 6077E998164258BE00056C96 /* LinkedinAuthorize.h */; };
+		6077E99B164258BE00056C96 /* LinkedinAuthorize.m in Sources */ = {isa = PBXBuildFile; fileRef = 6077E999164258BE00056C96 /* LinkedinAuthorize.m */; };
+		6077E99E16425A6300056C96 /* LinkedinConnector.h in Headers */ = {isa = PBXBuildFile; fileRef = 6077E99C16425A6300056C96 /* LinkedinConnector.h */; };
+		6077E99F16425A6300056C96 /* LinkedinConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 6077E99D16425A6300056C96 /* LinkedinConnector.m */; };
+		60EE26201564B40100320838 /* SNSHub-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 60EE255C1564B40100320838 /* SNSHub-Prefix.pch */; settings = {ATTRIBUTES = (Private, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1A2EEE0E14D5234700CA9507 /* libSNSHub.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSNSHub.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A2EEE1114D5234700CA9507 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1A2EEE6814D5240900CA9507 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6024FB261665BD530005DDE2 /* DoubanApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoubanApi.h; sourceTree = "<group>"; };
+		6024FB271665BD530005DDE2 /* DoubanApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoubanApi.m; sourceTree = "<group>"; };
+		6024FB2B1665BDB30005DDE2 /* DoubanAuthorize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoubanAuthorize.h; sourceTree = "<group>"; };
+		6024FB2C1665BDB30005DDE2 /* DoubanAuthorize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoubanAuthorize.m; sourceTree = "<group>"; };
+		6024FB2F1665BE220005DDE2 /* DoubanConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoubanConnector.h; sourceTree = "<group>"; };
+		6024FB301665BE220005DDE2 /* DoubanConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoubanConnector.m; sourceTree = "<group>"; };
+		604069411665A4FF00FBBD26 /* WeixinAuthorize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeixinAuthorize.h; sourceTree = "<group>"; };
+		604069421665A4FF00FBBD26 /* WeixinAuthorize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeixinAuthorize.m; sourceTree = "<group>"; };
+		6040694C1665B1EB00FBBD26 /* WeixinConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeixinConnector.h; sourceTree = "<group>"; };
+		6040694D1665B1EC00FBBD26 /* WeixinConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeixinConnector.m; sourceTree = "<group>"; };
+		604069501665B21B00FBBD26 /* WeixinApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeixinApi.h; sourceTree = "<group>"; };
+		604069511665B21B00FBBD26 /* WeixinApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeixinApi.m; sourceTree = "<group>"; };
+		6041959E1647573900AD63A7 /* SNSOAuth1Authorize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNSOAuth1Authorize.h; sourceTree = "<group>"; };
+		6041959F1647573A00AD63A7 /* SNSOAuth1Authorize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNSOAuth1Authorize.m; sourceTree = "<group>"; };
+		606A86591641026E007EA13D /* AccountInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountInfo.h; sourceTree = "<group>"; };
+		606A865A1641026E007EA13D /* AccountInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountInfo.m; sourceTree = "<group>"; };
+		606A865B1641026E007EA13D /* ApiCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiCore.h; sourceTree = "<group>"; };
+		606A865C1641026E007EA13D /* ApiCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiCore.m; sourceTree = "<group>"; };
+		606A865D1641026E007EA13D /* BaseApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseApi.h; sourceTree = "<group>"; };
+		606A865E1641026E007EA13D /* BaseApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseApi.m; sourceTree = "<group>"; };
+		606A865F1641026E007EA13D /* KaixinApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KaixinApi.h; sourceTree = "<group>"; };
+		606A86601641026E007EA13D /* KaixinApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KaixinApi.m; sourceTree = "<group>"; };
+		606A86611641026E007EA13D /* RenrenApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenrenApi.h; sourceTree = "<group>"; };
+		606A86621641026E007EA13D /* RenrenApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RenrenApi.m; sourceTree = "<group>"; };
+		606A86631641026E007EA13D /* SinaApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinaApi.h; sourceTree = "<group>"; };
+		606A86641641026E007EA13D /* SinaApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinaApi.m; sourceTree = "<group>"; };
+		606A86651641026E007EA13D /* TencentApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TencentApi.h; sourceTree = "<group>"; };
+		606A86661641026E007EA13D /* TencentApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TencentApi.m; sourceTree = "<group>"; };
+		606A86671641026E007EA13D /* TwitterApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterApi.h; sourceTree = "<group>"; };
+		606A86681641026E007EA13D /* TwitterApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterApi.m; sourceTree = "<group>"; };
+		606A866A1641026E007EA13D /* KaixinAuthorize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KaixinAuthorize.h; sourceTree = "<group>"; };
+		606A866B1641026E007EA13D /* KaixinAuthorize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KaixinAuthorize.m; sourceTree = "<group>"; };
+		606A866C1641026E007EA13D /* KaixinConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KaixinConnector.h; sourceTree = "<group>"; };
+		606A866D1641026E007EA13D /* KaixinConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KaixinConnector.m; sourceTree = "<group>"; };
+		606A866E1641026E007EA13D /* RenrenAuthorize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenrenAuthorize.h; sourceTree = "<group>"; };
+		606A866F1641026E007EA13D /* RenrenAuthorize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RenrenAuthorize.m; sourceTree = "<group>"; };
+		606A86701641026E007EA13D /* RenrenConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenrenConnector.h; sourceTree = "<group>"; };
+		606A86711641026E007EA13D /* RenrenConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RenrenConnector.m; sourceTree = "<group>"; };
+		606A86721641026E007EA13D /* SinaAuthorize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinaAuthorize.h; sourceTree = "<group>"; };
+		606A86731641026E007EA13D /* SinaAuthorize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinaAuthorize.m; sourceTree = "<group>"; };
+		606A86741641026E007EA13D /* SinaConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinaConnector.h; sourceTree = "<group>"; };
+		606A867E1641026E007EA13D /* TencentAuthorize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TencentAuthorize.h; sourceTree = "<group>"; };
+		606A867F1641026E007EA13D /* TencentAuthorize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TencentAuthorize.m; sourceTree = "<group>"; };
+		606A86801641026E007EA13D /* TencentConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TencentConnector.h; sourceTree = "<group>"; };
+		606A86811641026E007EA13D /* TencentConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TencentConnector.m; sourceTree = "<group>"; };
+		606A86821641026E007EA13D /* TwitterAuthorize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterAuthorize.h; sourceTree = "<group>"; };
+		606A86831641026E007EA13D /* TwitterAuthorize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterAuthorize.m; sourceTree = "<group>"; };
+		606A86841641026E007EA13D /* TwitterConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterConnector.h; sourceTree = "<group>"; };
+		606A86851641026E007EA13D /* TwitterConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterConnector.m; sourceTree = "<group>"; };
+		606A86861641026E007EA13D /* ConstantsDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstantsDefinition.h; sourceTree = "<group>"; };
+		606A86891641026E007EA13D /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		606A868A1641026E007EA13D /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		606A868B1641026E007EA13D /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		606A868C1641026E007EA13D /* CategoryUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryUtil.h; sourceTree = "<group>"; };
+		606A868D1641026E007EA13D /* CategoryUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryUtil.m; sourceTree = "<group>"; };
+		606A868F1641026E007EA13D /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		606A86901641026E007EA13D /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		607007F9164394A000DC2023 /* SinaConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinaConnector.m; sourceTree = "<group>"; };
+		607008031643ABB500DC2023 /* SNSAuthorize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNSAuthorize.h; sourceTree = "<group>"; };
+		607008041643ABB500DC2023 /* SNSAuthorize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNSAuthorize.m; sourceTree = "<group>"; };
+		607008051643ABB500DC2023 /* SNSAuthorizeWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNSAuthorizeWebView.h; sourceTree = "<group>"; };
+		607008061643ABB500DC2023 /* SNSAuthorizeWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNSAuthorizeWebView.m; sourceTree = "<group>"; };
+		607008071643ABB500DC2023 /* SNSConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNSConnector.h; sourceTree = "<group>"; };
+		607008081643ABB500DC2023 /* SNSConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNSConnector.m; sourceTree = "<group>"; };
+		607008091643ABB500DC2023 /* SNSRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNSRequest.h; sourceTree = "<group>"; };
+		6070080A1643ABB500DC2023 /* SNSRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNSRequest.m; sourceTree = "<group>"; };
+		6070080B1643ABB500DC2023 /* SNSSignatureRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNSSignatureRequest.h; sourceTree = "<group>"; };
+		6070080C1643ABB500DC2023 /* SNSSignatureRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNSSignatureRequest.m; sourceTree = "<group>"; };
+		607008171643ABE700DC2023 /* SNSOAuth1Connector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNSOAuth1Connector.h; sourceTree = "<group>"; };
+		607008181643ABE700DC2023 /* SNSOAuth1Connector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNSOAuth1Connector.m; sourceTree = "<group>"; };
+		6070081B1643AC0000DC2023 /* SNSOAuth2Connector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNSOAuth2Connector.h; sourceTree = "<group>"; };
+		6070081C1643AC0000DC2023 /* SNSOAuth2Connector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNSOAuth2Connector.m; sourceTree = "<group>"; };
+		6077E97B1642441B00056C96 /* FacebookConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookConnector.h; sourceTree = "<group>"; };
+		6077E97C1642441B00056C96 /* FacebookConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookConnector.m; sourceTree = "<group>"; };
+		6077E980164244A000056C96 /* FacebookAuthorize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookAuthorize.h; sourceTree = "<group>"; };
+		6077E981164244A000056C96 /* FacebookAuthorize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookAuthorize.m; sourceTree = "<group>"; };
+		6077E9851642465B00056C96 /* FacebookApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookApi.h; sourceTree = "<group>"; };
+		6077E9861642465B00056C96 /* FacebookApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookApi.m; sourceTree = "<group>"; };
+		6077E98F1642536600056C96 /* LinkedinApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedinApi.h; sourceTree = "<group>"; };
+		6077E9901642536600056C96 /* LinkedinApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkedinApi.m; sourceTree = "<group>"; };
+		6077E998164258BE00056C96 /* LinkedinAuthorize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedinAuthorize.h; sourceTree = "<group>"; };
+		6077E999164258BE00056C96 /* LinkedinAuthorize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkedinAuthorize.m; sourceTree = "<group>"; };
+		6077E99C16425A6300056C96 /* LinkedinConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedinConnector.h; sourceTree = "<group>"; };
+		6077E99D16425A6300056C96 /* LinkedinConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkedinConnector.m; sourceTree = "<group>"; };
+		60B197D21656487B0003C338 /* image.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = image.bundle; sourceTree = "<group>"; };
+		60EE255C1564B40100320838 /* SNSHub-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SNSHub-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A2EEE0B14D5234700CA9507 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A2EEE6914D5240900CA9507 /* UIKit.framework in Frameworks */,
+				1A2EEE1214D5234700CA9507 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A2EEE0314D5234700CA9507 = {
+			isa = PBXGroup;
+			children = (
+				60EE247C1564B40100320838 /* SNSHub */,
+				1A2EEE1014D5234700CA9507 /* Frameworks */,
+				1A2EEE0F14D5234700CA9507 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1A2EEE0F14D5234700CA9507 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A2EEE0E14D5234700CA9507 /* libSNSHub.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A2EEE1014D5234700CA9507 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A2EEE6814D5240900CA9507 /* UIKit.framework */,
+				1A2EEE1114D5234700CA9507 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		606A86581641026E007EA13D /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				606A86591641026E007EA13D /* AccountInfo.h */,
+				606A865A1641026E007EA13D /* AccountInfo.m */,
+				606A865B1641026E007EA13D /* ApiCore.h */,
+				606A865C1641026E007EA13D /* ApiCore.m */,
+				606A865D1641026E007EA13D /* BaseApi.h */,
+				606A865E1641026E007EA13D /* BaseApi.m */,
+				6024FB261665BD530005DDE2 /* DoubanApi.h */,
+				6024FB271665BD530005DDE2 /* DoubanApi.m */,
+				606A865F1641026E007EA13D /* KaixinApi.h */,
+				606A86601641026E007EA13D /* KaixinApi.m */,
+				606A86611641026E007EA13D /* RenrenApi.h */,
+				606A86621641026E007EA13D /* RenrenApi.m */,
+				606A86631641026E007EA13D /* SinaApi.h */,
+				606A86641641026E007EA13D /* SinaApi.m */,
+				606A86651641026E007EA13D /* TencentApi.h */,
+				606A86661641026E007EA13D /* TencentApi.m */,
+				606A86671641026E007EA13D /* TwitterApi.h */,
+				606A86681641026E007EA13D /* TwitterApi.m */,
+				6077E9851642465B00056C96 /* FacebookApi.h */,
+				6077E9861642465B00056C96 /* FacebookApi.m */,
+				6077E98F1642536600056C96 /* LinkedinApi.h */,
+				6077E9901642536600056C96 /* LinkedinApi.m */,
+				604069501665B21B00FBBD26 /* WeixinApi.h */,
+				604069511665B21B00FBBD26 /* WeixinApi.m */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		606A86691641026E007EA13D /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				607008021643ABB500DC2023 /* SNSBase */,
+				6024FB2B1665BDB30005DDE2 /* DoubanAuthorize.h */,
+				6024FB2C1665BDB30005DDE2 /* DoubanAuthorize.m */,
+				6024FB2F1665BE220005DDE2 /* DoubanConnector.h */,
+				6024FB301665BE220005DDE2 /* DoubanConnector.m */,
+				6077E980164244A000056C96 /* FacebookAuthorize.h */,
+				6077E981164244A000056C96 /* FacebookAuthorize.m */,
+				6077E97B1642441B00056C96 /* FacebookConnector.h */,
+				6077E97C1642441B00056C96 /* FacebookConnector.m */,
+				606A866A1641026E007EA13D /* KaixinAuthorize.h */,
+				606A866B1641026E007EA13D /* KaixinAuthorize.m */,
+				606A866C1641026E007EA13D /* KaixinConnector.h */,
+				606A866D1641026E007EA13D /* KaixinConnector.m */,
+				606A866E1641026E007EA13D /* RenrenAuthorize.h */,
+				606A866F1641026E007EA13D /* RenrenAuthorize.m */,
+				606A86701641026E007EA13D /* RenrenConnector.h */,
+				606A86711641026E007EA13D /* RenrenConnector.m */,
+				606A86721641026E007EA13D /* SinaAuthorize.h */,
+				606A86731641026E007EA13D /* SinaAuthorize.m */,
+				606A86741641026E007EA13D /* SinaConnector.h */,
+				607007F9164394A000DC2023 /* SinaConnector.m */,
+				6077E998164258BE00056C96 /* LinkedinAuthorize.h */,
+				6077E999164258BE00056C96 /* LinkedinAuthorize.m */,
+				6077E99C16425A6300056C96 /* LinkedinConnector.h */,
+				6077E99D16425A6300056C96 /* LinkedinConnector.m */,
+				606A867E1641026E007EA13D /* TencentAuthorize.h */,
+				606A867F1641026E007EA13D /* TencentAuthorize.m */,
+				606A86801641026E007EA13D /* TencentConnector.h */,
+				606A86811641026E007EA13D /* TencentConnector.m */,
+				606A86821641026E007EA13D /* TwitterAuthorize.h */,
+				606A86831641026E007EA13D /* TwitterAuthorize.m */,
+				606A86841641026E007EA13D /* TwitterConnector.h */,
+				606A86851641026E007EA13D /* TwitterConnector.m */,
+				604069411665A4FF00FBBD26 /* WeixinAuthorize.h */,
+				604069421665A4FF00FBBD26 /* WeixinAuthorize.m */,
+				6040694C1665B1EB00FBBD26 /* WeixinConnector.h */,
+				6040694D1665B1EC00FBBD26 /* WeixinConnector.m */,
+				606A86861641026E007EA13D /* ConstantsDefinition.h */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		606A86871641026E007EA13D /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				606A86881641026E007EA13D /* Base64 */,
+				606A868C1641026E007EA13D /* CategoryUtil.h */,
+				606A868D1641026E007EA13D /* CategoryUtil.m */,
+				606A868E1641026E007EA13D /* JSONKit */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		606A86881641026E007EA13D /* Base64 */ = {
+			isa = PBXGroup;
+			children = (
+				606A86891641026E007EA13D /* GTMBase64.h */,
+				606A868A1641026E007EA13D /* GTMBase64.m */,
+				606A868B1641026E007EA13D /* GTMDefines.h */,
+			);
+			path = Base64;
+			sourceTree = "<group>";
+		};
+		606A868E1641026E007EA13D /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				606A868F1641026E007EA13D /* JSONKit.h */,
+				606A86901641026E007EA13D /* JSONKit.m */,
+			);
+			path = JSONKit;
+			sourceTree = "<group>";
+		};
+		607008021643ABB500DC2023 /* SNSBase */ = {
+			isa = PBXGroup;
+			children = (
+				607008031643ABB500DC2023 /* SNSAuthorize.h */,
+				607008041643ABB500DC2023 /* SNSAuthorize.m */,
+				6041959E1647573900AD63A7 /* SNSOAuth1Authorize.h */,
+				6041959F1647573A00AD63A7 /* SNSOAuth1Authorize.m */,
+				607008051643ABB500DC2023 /* SNSAuthorizeWebView.h */,
+				607008061643ABB500DC2023 /* SNSAuthorizeWebView.m */,
+				607008071643ABB500DC2023 /* SNSConnector.h */,
+				607008081643ABB500DC2023 /* SNSConnector.m */,
+				607008171643ABE700DC2023 /* SNSOAuth1Connector.h */,
+				607008181643ABE700DC2023 /* SNSOAuth1Connector.m */,
+				6070081B1643AC0000DC2023 /* SNSOAuth2Connector.h */,
+				6070081C1643AC0000DC2023 /* SNSOAuth2Connector.m */,
+				607008091643ABB500DC2023 /* SNSRequest.h */,
+				6070080A1643ABB500DC2023 /* SNSRequest.m */,
+				6070080B1643ABB500DC2023 /* SNSSignatureRequest.h */,
+				6070080C1643ABB500DC2023 /* SNSSignatureRequest.m */,
+			);
+			path = SNSBase;
+			sourceTree = "<group>";
+		};
+		60B197D11656487B0003C338 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				60B197D21656487B0003C338 /* image.bundle */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		60EE247C1564B40100320838 /* SNSHub */ = {
+			isa = PBXGroup;
+			children = (
+				606A86581641026E007EA13D /* Api */,
+				606A86691641026E007EA13D /* Core */,
+				606A86871641026E007EA13D /* Library */,
+				60B197D11656487B0003C338 /* Resource */,
+				60EE255C1564B40100320838 /* SNSHub-Prefix.pch */,
+			);
+			path = SNSHub;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1A2EEE0C14D5234700CA9507 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				606A86931641026E007EA13D /* ApiCore.h in Headers */,
+				606A86951641026E007EA13D /* BaseApi.h in Headers */,
+				606A86C11641026E007EA13D /* CategoryUtil.h in Headers */,
+				606A86C31641026E007EA13D /* JSONKit.h in Headers */,
+				606A86911641026E007EA13D /* AccountInfo.h in Headers */,
+				607008111643ABB500DC2023 /* SNSConnector.h in Headers */,
+				607008131643ABB500DC2023 /* SNSRequest.h in Headers */,
+				6070080D1643ABB500DC2023 /* SNSAuthorize.h in Headers */,
+				6070080F1643ABB500DC2023 /* SNSAuthorizeWebView.h in Headers */,
+				60EE26201564B40100320838 /* SNSHub-Prefix.pch in Headers */,
+				606A86971641026E007EA13D /* KaixinApi.h in Headers */,
+				606A86991641026E007EA13D /* RenrenApi.h in Headers */,
+				606A869B1641026E007EA13D /* SinaApi.h in Headers */,
+				606A869D1641026E007EA13D /* TencentApi.h in Headers */,
+				606A869F1641026E007EA13D /* TwitterApi.h in Headers */,
+				606A86A11641026E007EA13D /* KaixinAuthorize.h in Headers */,
+				606A86A31641026E007EA13D /* KaixinConnector.h in Headers */,
+				606A86A51641026E007EA13D /* RenrenAuthorize.h in Headers */,
+				606A86A71641026E007EA13D /* RenrenConnector.h in Headers */,
+				606A86A91641026E007EA13D /* SinaAuthorize.h in Headers */,
+				606A86AB1641026E007EA13D /* SinaConnector.h in Headers */,
+				606A86B51641026E007EA13D /* TencentAuthorize.h in Headers */,
+				606A86B71641026E007EA13D /* TencentConnector.h in Headers */,
+				606A86B91641026E007EA13D /* TwitterAuthorize.h in Headers */,
+				606A86BB1641026E007EA13D /* TwitterConnector.h in Headers */,
+				606A86BD1641026E007EA13D /* ConstantsDefinition.h in Headers */,
+				606A86BE1641026E007EA13D /* GTMBase64.h in Headers */,
+				606A86C01641026E007EA13D /* GTMDefines.h in Headers */,
+				6077E97D1642441B00056C96 /* FacebookConnector.h in Headers */,
+				6077E982164244A000056C96 /* FacebookAuthorize.h in Headers */,
+				6077E9871642465B00056C96 /* FacebookApi.h in Headers */,
+				6077E9911642536600056C96 /* LinkedinApi.h in Headers */,
+				6077E99A164258BE00056C96 /* LinkedinAuthorize.h in Headers */,
+				6077E99E16425A6300056C96 /* LinkedinConnector.h in Headers */,
+				607008151643ABB500DC2023 /* SNSSignatureRequest.h in Headers */,
+				607008191643ABE700DC2023 /* SNSOAuth1Connector.h in Headers */,
+				6070081D1643AC0000DC2023 /* SNSOAuth2Connector.h in Headers */,
+				604195A01647573A00AD63A7 /* SNSOAuth1Authorize.h in Headers */,
+				604069431665A4FF00FBBD26 /* WeixinAuthorize.h in Headers */,
+				6040694E1665B1EC00FBBD26 /* WeixinConnector.h in Headers */,
+				604069521665B21B00FBBD26 /* WeixinApi.h in Headers */,
+				6024FB281665BD530005DDE2 /* DoubanApi.h in Headers */,
+				6024FB2D1665BDB30005DDE2 /* DoubanAuthorize.h in Headers */,
+				6024FB311665BE220005DDE2 /* DoubanConnector.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1A2EEE0D14D5234700CA9507 /* SNSHub */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A2EEE1B14D5234700CA9507 /* Build configuration list for PBXNativeTarget "SNSHub" */;
+			buildPhases = (
+				1A2EEE0A14D5234700CA9507 /* Sources */,
+				1A2EEE0B14D5234700CA9507 /* Frameworks */,
+				1A2EEE0C14D5234700CA9507 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SNSHub;
+			productName = IntegrateCenter;
+			productReference = 1A2EEE0E14D5234700CA9507 /* libSNSHub.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A2EEE0514D5234700CA9507 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "上海兕维信息科技有限公司";
+			};
+			buildConfigurationList = 1A2EEE0814D5234700CA9507 /* Build configuration list for PBXProject "SNSHub" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				English,
+				zh_CN,
+				zh_TW,
+				"zh-Hans",
+				"zh-Hant",
+			);
+			mainGroup = 1A2EEE0314D5234700CA9507;
+			productRefGroup = 1A2EEE0F14D5234700CA9507 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A2EEE0D14D5234700CA9507 /* SNSHub */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A2EEE0A14D5234700CA9507 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				606A86921641026E007EA13D /* AccountInfo.m in Sources */,
+				606A86941641026E007EA13D /* ApiCore.m in Sources */,
+				606A86961641026E007EA13D /* BaseApi.m in Sources */,
+				606A86981641026E007EA13D /* KaixinApi.m in Sources */,
+				606A869A1641026E007EA13D /* RenrenApi.m in Sources */,
+				606A869C1641026E007EA13D /* SinaApi.m in Sources */,
+				606A869E1641026E007EA13D /* TencentApi.m in Sources */,
+				606A86A01641026E007EA13D /* TwitterApi.m in Sources */,
+				606A86A21641026E007EA13D /* KaixinAuthorize.m in Sources */,
+				606A86A41641026E007EA13D /* KaixinConnector.m in Sources */,
+				606A86A61641026E007EA13D /* RenrenAuthorize.m in Sources */,
+				606A86A81641026E007EA13D /* RenrenConnector.m in Sources */,
+				606A86AA1641026E007EA13D /* SinaAuthorize.m in Sources */,
+				606A86B61641026E007EA13D /* TencentAuthorize.m in Sources */,
+				606A86B81641026E007EA13D /* TencentConnector.m in Sources */,
+				606A86BA1641026E007EA13D /* TwitterAuthorize.m in Sources */,
+				606A86BC1641026E007EA13D /* TwitterConnector.m in Sources */,
+				606A86BF1641026E007EA13D /* GTMBase64.m in Sources */,
+				606A86C21641026E007EA13D /* CategoryUtil.m in Sources */,
+				606A86C41641026E007EA13D /* JSONKit.m in Sources */,
+				6077E97E1642441B00056C96 /* FacebookConnector.m in Sources */,
+				6077E983164244A000056C96 /* FacebookAuthorize.m in Sources */,
+				6077E9881642465B00056C96 /* FacebookApi.m in Sources */,
+				6077E9921642536600056C96 /* LinkedinApi.m in Sources */,
+				6077E99B164258BE00056C96 /* LinkedinAuthorize.m in Sources */,
+				6077E99F16425A6300056C96 /* LinkedinConnector.m in Sources */,
+				607007FA164394A000DC2023 /* SinaConnector.m in Sources */,
+				6070080E1643ABB500DC2023 /* SNSAuthorize.m in Sources */,
+				607008101643ABB500DC2023 /* SNSAuthorizeWebView.m in Sources */,
+				607008121643ABB500DC2023 /* SNSConnector.m in Sources */,
+				607008141643ABB500DC2023 /* SNSRequest.m in Sources */,
+				607008161643ABB500DC2023 /* SNSSignatureRequest.m in Sources */,
+				6070081A1643ABE700DC2023 /* SNSOAuth1Connector.m in Sources */,
+				6070081E1643AC0000DC2023 /* SNSOAuth2Connector.m in Sources */,
+				604195A11647573A00AD63A7 /* SNSOAuth1Authorize.m in Sources */,
+				604069441665A4FF00FBBD26 /* WeixinAuthorize.m in Sources */,
+				6040694F1665B1EC00FBBD26 /* WeixinConnector.m in Sources */,
+				604069531665B21B00FBBD26 /* WeixinApi.m in Sources */,
+				6024FB291665BD530005DDE2 /* DoubanApi.m in Sources */,
+				6024FB2E1665BDB30005DDE2 /* DoubanAuthorize.m in Sources */,
+				6024FB321665BE220005DDE2 /* DoubanConnector.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1A2EEE1914D5234700CA9507 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
+				CLANG_WARN_OBJCPP_ARC_ABI = YES;
+				CODE_SIGN_IDENTITY = "";
+				CONFIGURATION_BUILD_DIR = "$(BUILT_PRODUCTS_DIR)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)";
+				OTHER_LDFLAGS = "-ObjC";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		1A2EEE1A14D5234700CA9507 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
+				CLANG_WARN_OBJCPP_ARC_ABI = YES;
+				CODE_SIGN_IDENTITY = "";
+				CONFIGURATION_BUILD_DIR = "$(BUILT_PRODUCTS_DIR)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)";
+				OTHER_LDFLAGS = "-ObjC";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Release;
+		};
+		1A2EEE1C14D5234700CA9507 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "";
+				DSTROOT = /tmp/SNSHub.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SNSHub/SNSHub-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)/usr/lib/system\"",
+					"\"$(SRCROOT)/SNSHub/TencentWeibo\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = SNSHub;
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1A2EEE1D14D5234700CA9507 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "";
+				DSTROOT = /tmp/SNSHub.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SNSHub/SNSHub-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)/usr/lib/system\"",
+					"\"$(SRCROOT)/SNSHub/TencentWeibo\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = SNSHub;
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A2EEE0814D5234700CA9507 /* Build configuration list for PBXProject "SNSHub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A2EEE1914D5234700CA9507 /* Debug */,
+				1A2EEE1A14D5234700CA9507 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A2EEE1B14D5234700CA9507 /* Build configuration list for PBXNativeTarget "SNSHub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A2EEE1C14D5234700CA9507 /* Debug */,
+				1A2EEE1D14D5234700CA9507 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A2EEE0514D5234700CA9507 /* Project object */;
+}
